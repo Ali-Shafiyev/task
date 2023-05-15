@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+  }
+  
+  .square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   animation: rotate 5s infinite;
+  }
+  
+  .inner-square {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+  
+    animation: rotate 8s infinite;
+  }
+  
+  .square2 {
+    width: 90px;
+    height: 90px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+  }
+  @keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+  
+    100%{
+        transform: rotate(0);
+    }
+  }
+  button{
+    margin-top: 100px;
+    margin-left: 10px;
+  }

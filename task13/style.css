@@ -1,0 +1,59 @@
+.container {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.animasyonlu-kutu {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animasyonlu-hareket 2s linear infinite alternate;
+}
+
+.animasyonsuz-kutu {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: animasyonsuz-hareket 4s linear infinite;
+    animation-timing-function: step-end;
+    top: 180px;
+  }
+
+@keyframes animasyonlu-hareket {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+.box1 {
+  border: 1px solid black;
+  height: 80px;
+  width: 300px;
+}
+.box2 {
+  border: 1px solid black;
+  height: 80px;
+  width: 300px;
+  margin-top: 38px;
+}
+@keyframes animasyonsuz-hareket {
+    0%, 15%, 85%, 100% {
+      width: 100px;
+    }
+
+    25%, 75% {
+      width: 200px;
+    }
+  }

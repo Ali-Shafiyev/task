@@ -1,0 +1,63 @@
+body{
+    background-color: orange;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width: 100px;
+  height: 100px;
+  background-color:greenyellow;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(360deg);
+    }
+}
+.box2{
+    width: 100px;
+  height: 100px;
+  background-color:greenyellow;
+  animation: rotate1 2s linear infinite;
+}
+@keyframes rotate1 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+}
+.box3{
+    width: 100px;
+  height: 100px;
+  background-color:greenyellow;
+  animation: rotate2 2s linear infinite;
+}
+@keyframes rotate2 {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+}
+.box1:hover{
+    animation-play-state: paused;
+}
+.box2:hover{
+    animation-play-state: paused;
+}
+.box3:hover{
+    animation-play-state: paused;
+}

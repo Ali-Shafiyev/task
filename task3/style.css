@@ -1,0 +1,25 @@
+
+.div1{
+  height: 100px;
+  width: 100px;
+  transition: width 0.5s linear;
+}
+.div2 {
+  height: 100px;
+  width: 100px;
+  transition: width 2s linear;
+}
+
+.div1 {
+  background-color: red;
+}
+
+.div2 {
+  background-color: blue;
+  position: relative;
+  top: 10px;
+  bottom: 20px;
+}
+.container:hover > div {
+  width: 50%;
+}
